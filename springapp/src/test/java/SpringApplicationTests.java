@@ -24,7 +24,7 @@ public class SpringApplicationTests {
 
 	//Add A New Task
 	@Test
-    public void test_case1() throws Exception {
+    public void testcase1() throws Exception {
 		
 		String dataOne = "{\"taskId\":\"12211\",\"taskHolderName\":\"Gowthaman M\",\"taskDate\":\"4/15/2021\",\"taskName\":\"Spring Projects\",\"taskStatus\":\"In Progress\"}";
 	 	mockMvc.perform(MockMvcRequestBuilders.post("/saveTask")
@@ -39,7 +39,7 @@ public class SpringApplicationTests {
 	
 	//Get All Task
 	@Test
-    public void test_case2() throws Exception {
+    public void testcase2() throws Exception {
 		
 	 	mockMvc.perform(MockMvcRequestBuilders.get("/alltasks")
 	 			.contentType(MediaType.APPLICATION_JSON)
@@ -53,7 +53,7 @@ public class SpringApplicationTests {
 	
 	//Get A Task By ID
 	@Test
-	public void test_case3() throws Exception {
+	public void testcase3() throws Exception {
 		
 		mockMvc.perform(MockMvcRequestBuilders.get("/getTask")
 				.param("taskId","12211")
@@ -70,7 +70,7 @@ public class SpringApplicationTests {
 	
 	//Delete A Task
 	@Test
-	public void test_case4() throws Exception {
+	public void testcase4() throws Exception {
 		
 		mockMvc.perform(MockMvcRequestBuilders.get("/deleteTask")
 				.param("taskId","12211")
