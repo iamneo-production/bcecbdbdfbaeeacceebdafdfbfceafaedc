@@ -31,8 +31,7 @@ public class ControllerClass {
     public Optional<ModelTask> getbyId(@RequestParam String taskId)
     {
         return service.getTaskById(Integer.valueOf(taskId));
-    }
+    }
 
 
-    
 }
