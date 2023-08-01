@@ -27,6 +27,22 @@
     <artifactId>spring-boot-starter-web</artifactId>
     <version>VERSION_NUMBER</version>
 </dependency>
+		<!-- For Maven -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <version>VERSION_NUMBER</version>
+    <scope>test</scope>
+</dependency>
+<!-- For Maven -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <version>VERSION_NUMBER</version>
+    <scope>test</scope>
+</dependency>
+
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
